@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-image: url(images/الحج1.jpg);
+    box-shadow: 0 0  20px 20px;
+    color: #0f0e0e;
+    
+}
+
+header {
+    background-color: #004d40;
+    color: rgb(11, 10, 10);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0  20px 20px;
+    color: #a89d9d;
+    font-family:"Readex Pro", sans-serif;
+    padding:20px 10px;
+	background-color:rgba(255,255,255,0.10);
+	color:whitesmoke;
+	border-radius:150px;
+	position:relative;
+	top:35px;
+	border:none;
+	font-size:1rem;
+	cursor:pointer;
+}
+
+@keyframes blink{
+	from{
+		background-position: 0%;
+	}
+
+	to{
+		background-position: 500%;
+	}
+}
+
+.header:after{
+	content:"";
+	position:absolute;
+	left:-10px;
+	right:-10px;
+	top:-10px;
+	bottom:-10px;
+	background: inherit;
+	border-radius:40px;
+	filter:blur(50px);
+	opacity:0;
+}
+header:hover{
+    background:linear-gradient(90deg,#ff3508,#50e3fc,#bc13fe,#03a9f4,#0ff0fc);
+	background-size: 500%;
+	z-index:1;
+	animation:blink 7s linear infinite;
+}
+.header:hover::after{
+	opacity:1;
+	z-index:-1;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ddf507;
+    text-shadow: 0 0 20px rgb(254, 255, 251);
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-items: 1.5em;
+    font-family: "El Messiri", sans-serif;
+   
+  }
+  
+   
+
+
+nav ul li {
+    margin: 0 15px;
+   
+}
+
+nav ul li a {
+    color: rgb(247, 239, 239);
+    text-shadow: #d2f604 0 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-size: 40xp;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.hero {
+    background-image: url('images/kaaba.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(245, 236, 236);
+    padding: 100px 202px;
+    font-family:"Readex Pro", sans-serif;
+    text-shadow: 2px 2px 5px red;
+
+}
+.hero:hover{
+    color: #f5f505;
+    text-shadow: #0ff3cd 0 0 20px;
+}
+.hero h2 {
+    font-size: 3em;
+    margin: 10;
+}
+
+.hero p {
+    font-size: 1.4em;
+    text-shadow: 2px 2px 5px rgb(255, 255, 0);
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    color: #000;
+    font-family: "El Messiri", sans-serif;
+  
+   
+}
+
+.step {
+    background-color: rgb(237, 238, 229);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(247, 124, 124, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+.step:hover{
+    background-color: rgb(247, 237, 214);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(233, 219, 107, 0.996);
+    
+    text-shadow: 2px 2px 5px rgb(224, 74, 162);
+   
+       
+    
+    
+}
+.step img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form :hover{
+    max-width: 600px;
+    color: #f20808;
+    margin: 1 auto;
+    display: flex;
+    box-shadow: #f30cc9;
+    text-shadow: 2px 2px 5px rgb(230, 246, 8);
+}
+label {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #e8c810;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0ff3cd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #522e2e;
+}
+
+}
+
